@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #FFFFFF;
+    color: #333333;
+    line-height: 1.4;
+  }
+  
+  :root {
+    --black-dark: #000000;
+    --black-middle: #333333;
+    --gray-dark: #4F4F4F;
+    --gray-middle: #828282;
+    --gray-light: #BDBDBD;
+    --gray-lighter: #E0E0E0;
+    --white: #FFFFFF;
+    --accent-cream: #F9F1DC;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: var(--black-dark);
+    color: var(--white);
+    padding: 15px 25px;
+    min-height: 44px;
+  }
+  
+  .btn-primary:hover {
+    background: var(--black-middle);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--black-dark);
+    border: 1px solid var(--black-dark);
+    padding: 15px 25px;
+    min-height: 44px;
+    width: 44px;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--black-dark);
+    color: var(--white);
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .text-price {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--black-middle);
+  }
+  
+  .text-small {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  
+  .text-strike {
+    text-decoration: line-through;
+    color: var(--gray-middle);
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+    
+    body {
+      font-size: 14px;
+    }
+  }
