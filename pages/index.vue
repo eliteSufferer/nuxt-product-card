@@ -98,13 +98,6 @@ export default {
   head() {
     return {
       title: `${this.product.title} - STIK`,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: `${this.product.title} за ${this.product.price.current}. Купить в интернет-магазине STIK.`
-        }
-      ]
     }
   }
 }
