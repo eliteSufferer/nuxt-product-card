@@ -160,7 +160,7 @@ export default {
   }
 
   .product-info, .similar-products {
-    padding: 0 16px;
+    padding: 0 16px !important;
   }
   
 }
