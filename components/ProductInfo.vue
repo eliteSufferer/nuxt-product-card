@@ -1,7 +1,12 @@
 <template>
     <div class="product-info">
       <div class="product-header">
-        <h1 class="product-title">{{ title }}</h1>
+        <div class="product-title-row">
+          <h1 class="product-title">{{ title }}</h1>
+          <button class="product-favorite-icon" aria-label="Добавить в избранное">
+            <IconFavorite />
+          </button>
+        </div>
         <div class="product-price">{{ price.current }}</div>
       </div>
   
@@ -46,7 +51,7 @@
         <button class="btn btn-primary product-buy-btn">
           Добавить в корзину
         </button>
-        <button class="btn btn-secondary product-favorite-btn">
+        <button class="btn product-favorite-btn product-favorite-btn--desktop" style="background: transparent; border: 1px solid var(--black-dark)">
           <IconFavorite />
         </button>
       </div>
@@ -152,13 +157,35 @@
     margin-bottom: 32px;
   }
   
+  .product-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
   .product-title {
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--black-middle);
-    margin-bottom: 8px;
+    margin: 0;
+  }
+  
+  .product-favorite-icon {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    color: var(--black-dark);
+    transition: opacity 0.2s ease;
+  }
+  
+  .product-favorite-icon:hover {
+    opacity: 0.7;
   }
   
   .product-price {
@@ -278,6 +305,16 @@
   @media (max-width: 768px) {
     .product-info {
       max-width: none;
+    }
+    
+    .product-favorite-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .product-actions {
+      display: none;
     }
     
     .sizes {

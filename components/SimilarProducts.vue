@@ -7,6 +7,7 @@
           v-for="product in products"
           :key="product.id"
           :product="product"
+          @click="handleProductClick(product)"
         />
       </div>
     </section>
@@ -22,6 +23,12 @@
         default: () => []
       }
     },
+    
+    methods: {
+      handleProductClick(product) {
+        console.log('Clicked product:', product)
+      }
+    }
   }
   </script>
   
@@ -36,7 +43,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: var(--black-middle);
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
   
   .similar-products__grid {
@@ -60,11 +67,13 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
+
   }
   
   @media (max-width: 480px) {
     .similar-products__grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
     }
   }
   </style>

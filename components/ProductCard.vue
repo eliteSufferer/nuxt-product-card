@@ -113,5 +113,24 @@
     .product-card__body {
       gap: 8px;
     }
+    
+    .product-card__title {
+      font-size: 9px;
+      line-height: 12px;
+    }
+    
+    .product-card__price-current,
+    .product-card__price-original {
+      font-size: 9px;
+      line-height: 12px;
+    }
+
+    .product-card__title {
+      text-transform: uppercase;
+    }
+
+    .product-card__price-current{
+      color: var(--gray-middle)
+    }
   }
   </style>
