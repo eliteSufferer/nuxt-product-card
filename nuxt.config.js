@@ -56,7 +56,6 @@ export default {
     publicPath: '/nuxt-product-card/_nuxt/'
   },
 
-  // Генерация статических файлов
   generate: {
     fallback: true
   }
