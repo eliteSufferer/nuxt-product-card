@@ -51,17 +51,17 @@ export default {
       productImages: [
         { 
           id: 1, 
-          src: '/images/jacket-1.png',
+          src: '/nuxt-product-card/images/jacket-1.png',
           alt: 'Жакет удлинённый вид 1' 
         },
         { 
           id: 2, 
-          src: '/images/jacket-2.png',
+          src: '/nuxt-product-card/images/jacket-2.png',
           alt: 'Жакет удлинённый вид 2' 
         },
         { 
           id: 3, 
-          src: '/images/jacket-3.png',
+          src: '/nuxt-product-card/images/jacket-3.png',
           alt: 'Жакет удлинённый вид 3' 
         }
       ],
@@ -71,25 +71,25 @@ export default {
           id: 1,
           title: 'ПЛАТЬЕ С V-ОБРАЗНЫМ ВЫРЕЗОМ, БЕЛЫЙ',
           price: { current: '14 900 RUB', original: '8 000 RUB' },
-          image: '/images/v-shape.png'
+          image: '/nuxt-product-card/images/v-shape.png'
         },
         {
           id: 2,
           title: 'ЖАКЕТ ДВУБОРТНЫЙ, СЕРО-ГОЛУБОЙ',
           price: { current: '8900 RUB', original: null },
-          image: '/images/jacket-two-sided.png'
+          image: '/nuxt-product-card/images/jacket-two-sided.png'
         },
         {
           id: 3,
           title: 'ПЛАТЬЕ МАКСИ С ЯРУСАМИ, БЕЛЫЙ',
           price: { current: '10 500 RUB', original: null },
-          image: '/images/maxi-dress.png'
+          image: '/nuxt-product-card/images/maxi-dress.png'
         },
         {
           id: 4,
           title: 'КОМБИНЕЗОН СО СТОЙКОЙ, ЧёРНЫЙ',
           price: { current: '9500 RUB', original: null },
-          image: '/images/suit-comb.png'
+          image: '/nuxt-product-card/images/suit-comb.png'
         }
       ]
     }

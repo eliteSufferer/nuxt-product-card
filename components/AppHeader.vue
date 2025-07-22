@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="/images/logo.png" alt="STIK" class="header__logo-img" />
+                    <img src="/nuxt-product-card/images/logo.png" alt="STIK" class="header__logo-img" />
                 </div>
 
                 <nav class="header__nav">
