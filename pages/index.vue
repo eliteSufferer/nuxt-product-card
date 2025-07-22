@@ -157,10 +157,11 @@ export default {
   }
   .container {
     padding: 0;
+    margin-bottom: 40px;
   }
 
   .product-info, .similar-products {
-    padding: 0 16px;
+    padding: 0 16px !important;
   }
   
 }
