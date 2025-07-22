@@ -5,9 +5,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Настройки для GitHub Pages
+  // Router settings for GitHub Pages
   router: {
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-product-card/' : '/'
+    base: '/nuxt-product-card/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -53,7 +53,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    publicPath: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-product-card/_nuxt/' : '/_nuxt/'
+    publicPath: '/nuxt-product-card/_nuxt/'
   },
 
   // Генерация статических файлов
