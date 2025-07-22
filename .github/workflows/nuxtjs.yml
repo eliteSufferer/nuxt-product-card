@@ -40,7 +40,7 @@ jobs:
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT  # Изменил с "ci" на "install"
             exit 0
           else
             echo "Unable to determine package manager"
@@ -50,7 +50,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          # Убрал cache т.к. нет package-lock.json
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
